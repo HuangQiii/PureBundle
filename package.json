@@ -1,0 +1,30 @@
+{
+	"name": "PureBundle",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"ac-qrcode": "^1.0.1",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.46.1",
+		"react-native-baidu-map": "^0.6.0",
+		"react-native-contacts": "^1.0.2",
+		"react-native-cookies": "^3.2.0",
+		"react-native-deprecated-custom-components": "^0.1.1",
+		"react-native-image-crop-picker": "^0.17.2",
+		"react-native-vector-icons": "^4.4.2",
+		"react-navigation": "^1.0.0-beta.11"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0-alpha.12"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
