@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View
-} from 'react-native';
+import { StyleSheet, Text, View, Image, Linking } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class Hello extends Component {
+const aboutLogo = require('../images/about_logo.png');
+export default class ThirdPage extends Component {
+
+    static navigationOptions = {
+        title: '导航栏',
+    };
+
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    This is A Pure Bundle
-        </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit this Page
-        </Text>
-                <Text style={styles.instructions}>
-                    Double tap R on your keyboard to reload,{'\n'}
-                    Shake or press menu button for dev menu
-        </Text>
+                <View style={styles.content}>
+                    <View style={styles.center}>
+                        <Image style={styles.logo} source={aboutLogo} />
+                        <Text style={styles.title}>欢迎页</Text>
+                        <Text style={styles.version}>修改Hello.js</Text>
+                        <Text style={styles.subtitle}>Reload即可看到效果</Text>
+                    </View>
+                    <View style={styles.bottomContainer}>
+                        <View style={styles.disclaimerContent}>
+                            <Text style={[styles.disclaimer, { color: '#999999' }]}>
+                                Qyellow
+                            </Text>
+                        </View>
+                    </View>
+                </View>
             </View>
         );
     }
@@ -28,20 +35,46 @@ export default class Hello extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'column',
+        backgroundColor: '#fff'
+    },
+    content: {
+        flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        paddingBottom: 10
     },
-    welcome: {
-        fontSize: 20,
+    center: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    logo: {
+        width: 110,
+        height: 110,
+        marginTop: 50
+    },
+    version: {
+        fontSize: 14,
         textAlign: 'center',
-        margin: 10,
+        color: '#aaaaaa',
+        marginTop: 5
     },
-    instructions: {
+    title: {
+        fontSize: 28,
         textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
+        marginTop: 10
     },
+    subtitle: {
+        fontSize: 10,
+        textAlign: 'center',
+    },
+    disclaimerContent: {
+        flexDirection: 'column'
+    },
+    disclaimer: {
+        fontSize: 14,
+        textAlign: 'center'
+    },
+    bottomContainer: {
+        alignItems: 'center'
+    }
 });
-
-AppRegistry.registerComponent('PureBundle', () => PureBundle);
