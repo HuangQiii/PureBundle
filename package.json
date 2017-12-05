@@ -4,13 +4,13 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"bundle-output": "node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file index.android.js --bundle-output output/index.android.bundle --assets-dest output/"
 	},
 	"dependencies": {
 		"ac-qrcode": "^1.0.1",
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.46.1",
-		"react-native-baidu-map": "^0.6.0",
 		"react-native-contacts": "^1.0.2",
 		"react-native-cookies": "^3.2.0",
 		"react-native-deprecated-custom-components": "^0.1.1",

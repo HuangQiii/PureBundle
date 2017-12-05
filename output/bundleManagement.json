@@ -1,0 +1,16 @@
+{
+    "bundle": {
+        "description": "PureBundle基本版本",
+        "iconName": "PureBundle.png",
+        "isMain": "0",
+        "name": "PureBundle",
+        "nameCn": "模板模块",
+        "organizationId": 1
+    },
+    "description": "用于CI的PureBundle",
+    "fileName": "PureBundle.android-1.0.0.zip",
+    "version": "1.0.0",
+    "type": "Android",
+    "appCoreVersion": "1.0.0",
+    "status": "1"
+}
