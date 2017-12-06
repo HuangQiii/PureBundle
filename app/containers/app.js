@@ -1,11 +1,14 @@
 import { StackNavigator, TabNavigator, NavigationActions } from 'react-navigation';
 import Hello from '../pages/Hello';
 import Head from '../pages/Head';
+import ContactsExample from '../pages/ContactsExample';
 
 const App = StackNavigator(
     {
+        ContactsExample: { screen: ContactsExample },
         Head: { screen: Head },
-        Hello: { screen: Hello }
+        Hello: { screen: Hello },
+
     },
     {
         headerMode: 'screen'
