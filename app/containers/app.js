@@ -1,8 +1,10 @@
 import { StackNavigator, TabNavigator, NavigationActions } from 'react-navigation';
 import Hello from '../pages/Hello';
+import Head from '../pages/Head';
 
 const App = StackNavigator(
     {
+        Head: { screen: Head },
         Hello: { screen: Hello }
     },
     {
