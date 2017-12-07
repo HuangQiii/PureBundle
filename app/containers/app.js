@@ -2,14 +2,14 @@ import { StackNavigator, TabNavigator, NavigationActions } from 'react-navigatio
 import Hello from '../pages/Hello';
 import Head from '../pages/Head';
 import ContactsExample from '../pages/ContactsExample';
-//import ScannerView from '../pages/QRScanner/ScannerView';
-//import Open from '../pages/QRScanner/Open';
+import ScannerView from '../pages/QRScanner/ScannerView';
+import Open from '../pages/QRScanner/Open';
 
 const App = StackNavigator(
     {
         Hello: { screen: Hello },
-        // ScannerView: { screen: ScannerView },
-        // Open: { screen: Open },
+        ScannerView: { screen: ScannerView },
+        Open: { screen: Open },
         ContactsExample: { screen: ContactsExample },
         Head: { screen: Head },
     },
