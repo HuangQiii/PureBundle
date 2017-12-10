@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, Linking } from 'react-native';
+import { StyleSheet, Text, View, Image, Linking, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const aboutLogo = require('../images/about_logo.png');
@@ -18,6 +18,21 @@ export default class ThirdPage extends Component {
                         <Text style={styles.title}>欢迎页</Text>
                         <Text style={styles.version}>修改Hello.js</Text>
                         <Text style={styles.subtitle}>Reload即可看到效果</Text>
+                        <TouchableOpacity
+                            onPress={() => this.props.navigation.navigate('Head')}
+                        >
+                            <Text style={styles.version}>摄像头和本地相册示例</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => this.props.navigation.navigate('ContactsExample')}
+                        >
+                            <Text style={styles.version}>通讯录示例</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => this.props.navigation.navigate('ScannerView')}
+                        >
+                            <Text style={styles.version}>二维码示例</Text>
+                        </TouchableOpacity>
                     </View>
                     <View style={styles.bottomContainer}>
                         <View style={styles.disclaimerContent}>
