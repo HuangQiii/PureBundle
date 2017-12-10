@@ -27,6 +27,8 @@ npm install
 ```
 react-native link
 ```
+
+此处可能需要单独link react-native-camera，还要确保没有重复link
 #### Run
 
 ```
